@@ -1,25 +1,6 @@
 
-*{
-    margin: 0px;
-    padding: 0px;
-}
-a{
-    text-decoration: none;
-    list-style-type: none;
-    text-decoration-color: none;
-}
-
-li{
-    list-style: none;
-    align-items: center;
-    font-family: fantasy;
-    line-height: 8ch;
-}
-.navegador{
-    display: flex;
-    background-color: black;
-    height: 120px;
-    justify-content: space-between;
+ *{
+    margin: 0px !important;
 }
 .navegador h1{
     color: aqua;
@@ -40,6 +21,168 @@ li{
 .fotoHeaven{
     height: 100%;
 }
+.navegador{
+    display: flex;
+    background-color: black;
+    height: 120px;
+    justify-content: space-between;
+    align-items: center;
+}
+.identidad{
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 40px;
+    text-align: center;
+    background-color:black;
+    color: aqua;
+}
+.etiquetaDj{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 3fr;
+    grid-template-areas: "foto nom"
+                         "foto desc" ;
+    justify-content: start;
+    margin: 40px;
+}
+
+.fotoDj{
+    width: 500px;
+    height: 400px;
+    grid-area: foto;
+    background-color: black;
+
+}
+.nombreDj{
+    height: 100px;
+    grid-area: nom;
+    text-align: center;
+    background-color: aqua;
+    line-height: 400%;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: auto;
+
+    
+
+}
+.descripDj{
+    height: 300px;
+    grid-area: desc;
+    text-align: center;
+    font-size: auto;
+    line-height: 200%;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 21px;
+}   
+.tituloServicios{
+    background-image: url(../Fotos/IMAGEN_HEAVEN.jpg);
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    line-height: 420%;
+    color: black;
+    background-size: cover;
+    font-size: 100px;
+    margin: 0px;
+}
+.explicacionServicios{
+    width: 100%;
+    height: 300px;
+    line-height: 300%;
+    color: aqua;
+    background-color: black;
+    font-size: 40px;
+    font: oblique;
+    text-align: center;
+}
+.tarjetaServicios{
+    width: 100%;
+    height: 505px;
+    display: flex;
+    margin: 0px;
+}
+.videoServicios{
+    background-image: url(../Fotos/Setup\ -\ Equipo\ de\ sonido\ e\ iluminacion\ Matias\ Capurro.mp4);
+    width: 80%;
+    height: 100%;
+    background-size: cover;
+}
+.textoVertical{
+    background-color: black;
+    width: 22%;
+    height: 100%;
+    font-size: 43px;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: center;
+    color: azure;
+}
+@media(min-width:320px){
+
+    .menu{
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "navqs     navdjs"
+                             "navserv  navcont" 
+                            ;
+        justify-content: start;
+        margin: 0px;
+    }
+
+    .djs{
+        background-image: url(../Fotos/foto\ de\ matidj.png);
+        width: 100%;
+        height: 100%;
+        grid-area: navdjs;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+    }
+    .servicios{
+        background-image: url(../Fotos/Captura\ de\ Pantalla\ 2022-04-04\ a\ la\(s\)\ 17.43.21.png);
+        width: 100%;
+        height: 100%;
+        grid-area: navserv;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .contacto{
+        background-image: url(../Fotos/Captura\ de\ Pantalla\ 2022-04-04\ a\ la\(s\)\ 17.43.40.png);
+        width: 100%;
+        height: 300px;
+        grid-area: navcont;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+    .quienesSomos{
+        background-image: url(../Fotos/Captura\ de\ Pantalla\ 2022-04-04\ a\ la\(s\)\ 17.44.29.png);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        grid-area: navqs;
+        border-radius: 5px;
+        }
+    }
+.navegador ul li :hover{
+    color:blueviolet;
+    }
+/***
+a{
+    text-decoration: none !important;
+    list-style-type: none !important;
+    text-decoration-color: none;
+}
+
+li{
+    list-style: none;
+    align-items: center;
+    font-family: fantasy;
+    line-height: 8ch;
+}
 .menu{
     display:grid;
     grid-template-columns: 1fr 1fr;
@@ -55,7 +198,6 @@ li{
     color:white;
 }
 .quienesSomos{
-    background-image: url("../Fotos/Captura\ de\ Pantalla\ 2022-04-04\ a\ la\(s\)\ 17.44.29.png");
     width: 100%;
     height: 500px;
     background-size: cover;
@@ -106,98 +248,12 @@ li{
     height: 600px;
     background-size: cover;
 }
-.etiquetaDj{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 3fr;
-    grid-template-areas: "foto nom"
-                         "foto desc" ;
-    justify-content: start;
-    margin: 40px;
-}
 
-.fotoDj{
-    width: 500px;
-    height: 400px;
-    grid-area: foto;
-    background-color: black;
-
-}
-.nombreDj{
-    height: 100px;
-    grid-area: nom;
-    text-align: center;
-    background-color: aqua;
-    line-height: 400%;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: auto;
-
-    
-
-}
-.descripDj{
-    height: 300px;
-    grid-area: desc;
-    text-align: center;
-    font-size: auto;
-    line-height: 200%;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 21px;
-}   
 .heaven{
     font-family: 'IBM Plex Mono', monospace;
 }
-.identidad{
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: 40px;
-    text-align: center;
-    background-color:black;
-    color: aqua;
-}
 .tr{
     color: brown;
-}
-.tituloServicios{
-    background-image: url(../Fotos/IMAGEN_HEAVEN.jpg);
-    width: 100%;
-    height: 400px;
-    text-align: center;
-    line-height: 420%;
-    color: black;
-    background-size: cover;
-    font-size: 100px;
-    margin: 0px;
-}
-.explicacionServicios{
-    width: 100%;
-    height: 300px;
-    line-height: 300%;
-    color: aqua;
-    background-color: black;
-    font-size: 40px;
-    font: oblique;
-    text-align: center;
-}
-.tarjetaServicios{
-    width: 100%;
-    height: 505px;
-    display: flex;
-    margin: 0px;
-}
-.videoServicios{
-    background-image: url(../Fotos/Setup\ -\ Equipo\ de\ sonido\ e\ iluminacion\ Matias\ Capurro.mp4);
-    width: 80%;
-    height: 100%;
-    background-size: cover;
-}
-.textoVertical{
-    background-color: black;
-    width: 22%;
-    height: 100%;
-    font-size: 43px;
-    font-family: 'IBM Plex Mono', monospace;
-    text-align: center;
-    color: azure;
 }
 .presupuesto{
     background-image: url(../Fotos/foto_formulario_heaven.jpg);
@@ -225,59 +281,4 @@ li{
     font-family: 'IBM Plex Mono', monospace;
     font-size: larger;
 }
-@media(min-width:3200px){
-
-    .menu{
-        display:grid;
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: 1fr 1fr;
-        grid-template-areas: "navqs     navdjs"
-                             "navserv  navcont" 
-                            ;
-        justify-content: start;
-        margin: 0px;
-    }
-
-    .djs{
-        
-        background-image: url("../Fotos/foto\ de\ tomidj.jpg");
-        width: 100%;
-        height: 500px;
-        grid-area: navdjs;
-        display: flex;
-        text-align: center;
-        justify-content: center;
-        align-items: center;
-    }
-    .servicios{
-        background-image: url("../Fotos/Captura\ de\ Pantalla\ 2022-04-04\ a\ la\(s\)\ 17.43.21.png");
-        display: flex;
-        width: 100%;
-        height: 500px;
-        grid-area: navserv;
-        align-items: center;
-        justify-content: center;
-    }
-    .contacto{
-        background-image: url("../Fotos/foto\ de\ matidj.png");
-        display: flex;
-        width: 100%;
-        height: 500px;
-        grid-area: navcont;
-        align-items: center;
-        text-align: center;
-        justify-content: center;
-    }
-    .quienesSomos{
-        background-image: url("../Fotos/Captura\ de\ Pantalla\ 2022-04-04\ a\ la\(s\)\ 17.44.29.png");
-        display: flex;
-        width: 100%;
-        height: 500px;
-        grid-area: navqs;
-        align-items: center;
-        justify-content: center;
-        }
-}
-.navegador ul li :hover{
-    color:blueviolet;
-    }
+ 
