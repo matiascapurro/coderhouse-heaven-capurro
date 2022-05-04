@@ -225,7 +225,7 @@ li{
     font-family: 'IBM Plex Mono', monospace;
     font-size: larger;
 }
-@media(min-width:320px){
+@media(min-width:3200px){
 
     .menu{
         display:grid;
