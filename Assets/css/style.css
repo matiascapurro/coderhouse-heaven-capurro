@@ -2,6 +2,15 @@
  *{
     margin: 0px !important;
 }
+.presupuesto{
+    background-image: url(../Fotos/foto_formulario_heaven.jpg);
+    background-size: cover;
+    display: block;
+    width: 100%;
+    height: 600px;
+    color: aliceblue;
+    font-size: larger;
+}
 .navegador h1{
     color: aqua;
 }
@@ -170,115 +179,7 @@
 .navegador ul li :hover{
     color:blueviolet;
     }
-/***
-a{
-    text-decoration: none !important;
-    list-style-type: none !important;
-    text-decoration-color: none;
-}
-
-li{
-    list-style: none;
-    align-items: center;
-    font-family: fantasy;
-    line-height: 8ch;
-}
-.menu{
-    display:grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
-    grid-template-areas: "navqs   navqs"
-                         "navdjs  navdjs" 
-                         "navserv navserv"
-                         "navcont navcont";
-    justify-content: start;
-    margin: 0px;
-}
-.menu li a {
-    color:white;
-}
-.quienesSomos{
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    grid-area: navqs;
-    text-align: center;
-    font-size: 40px;
-}
-
-.djs{
-    background-image: url("../Fotos/foto\ de\ tomidj.jpg");
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    grid-area: navdjs;
-    text-align: center;
-    font-size: 40px;
-}
-
-.servicios{
-    background-image: url("../Fotos/Captura\ de\ Pantalla\ 2022-04-04\ a\ la\(s\)\ 17.43.21.png");
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    grid-area: navserv;
-    text-align: center;
-    font-size: 40px;
-}
-
-.contacto{
-    background-image: url("../Fotos/foto\ de\ matidj.png");
-    width: 100%;
-    height: 500px;
-    background-size: cover;
-    grid-area: navcont;
-    text-align: center;
-    font-size: 40px;
-}
-
-.pieDePagina{
-    background-color: black;
-    color:aqua;
-    height: 50px;
-    align-items: center;
-}
-.video{
-    background-image: url("../Fotos/y2mate.com\ -\ Efectos\ visuales\ para\ tus\ fiestas\ HD\ full_1080p.mp4");
-    width: 100%;
-    height: 600px;
-    background-size: cover;
-}
-
-.heaven{
-    font-family: 'IBM Plex Mono', monospace;
-}
-.tr{
-    color: brown;
-}
-.presupuesto{
-    background-image: url(../Fotos/foto_formulario_heaven.jpg);
-    background-size: cover;
-    display: block;
-    width: 100%;
-    height: 600px;
-    color: aliceblue;
-    font-size: larger;
-}
-.infoEvento{
-    width: 400px;
-    height: 150px;
-}
 .introForm{
-    text-align: center;
-    margin-bottom: 100px;
-}
-.casillero{
-    margin: 25px;
-}
-.botonEnviar{
-    width: 100px;
-    background-color: aqua;
-    font-family: 'IBM Plex Mono', monospace;
-    font-size: larger;
-}
- 
+        text-align: center;
+        margin-bottom: 100px;
+    }
